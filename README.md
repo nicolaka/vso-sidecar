@@ -16,11 +16,13 @@ vault namespace create vso
 
 3. Export the following 
 
+```
 export TF_VAR_vault_namespace="vso";
 export TF_VAR_vault_public_address="https://vault.hashicorp.cloud:8200";
 export TF_VAR_vault_admin_token="XXXXXXX";
 export TF_VAR_kubernetes_endpoint="https://kubernetes.hashicorp.com";
 export TF_VAR_kubernetes_namespace="vso"
+```
 
 4. Ensure your kubeconfig path and context are correct in `providers.tf` for both the kubernetes and helm providers.
 
