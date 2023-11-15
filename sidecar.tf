@@ -26,4 +26,8 @@ resource "helm_release" "vault" {
     name  = "global.tlsDisable"
     value = "true"
   }
+  set {
+    name  = "global.openshift"
+    value = "true"
+  }
 }

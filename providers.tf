@@ -24,12 +24,12 @@ provider "vault" {
 
 provider "kubernetes" {
   config_path           = "~/.kube/config"
-  config_context = "arn:aws:eks:us-east-2:713653441474:cluster/astro-us-east-2-eks"
+  config_context        = "default"
 }
 
 provider "helm" {
   kubernetes {
     config_path = "~/.kube/config"
-    config_context = "arn:aws:eks:us-east-2:713653441474:cluster/astro-us-east-2-eks"
+    config_context = "default"
   }
 }

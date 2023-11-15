@@ -18,7 +18,7 @@ resource "helm_release" "vso" {
 
   set {
     name  = "defaultVaultConnection.skipTLSVerify"
-    value = "false"
+    value = "true"
   }
   
   set {
