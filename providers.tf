@@ -27,9 +27,29 @@ provider "kubernetes" {
   config_context        = "default"
 }
 
+
 provider "helm" {
   kubernetes {
     config_path = "~/.kube/config"
     config_context = "default"
   }
 }
+
+/*
+# Alternateivly you can use client token/cert for auth
+
+provider "kubernetes" {
+  host                   = var.kubernetes_endpoint
+  cluster_ca_certificate = base64decode(CERTIFICATE)
+  token                  = TOKEN
+}
+
+provider "helm" {
+  kubernetes {
+    host                   = var.kubernetes_endpoint
+    cluster_ca_certificate = base64decode(CERTIFICATE)
+    token                  = TOKEN
+  }
+}
+
+*/
