@@ -1,7 +1,7 @@
-# Deploying VSP + Sidecar on Openshift/K8s
+# Deploying VSO + Sidecar on Openshift/K8s
 
 
-0. Ensure that the kubernetes cluster has no previos deployments of vault or VSO, including no pods, secrets, clusterroles, clusterrolebindings..etc and en
+0. Ensure that the kubernetes cluster has no previos deployments of vault or VSO, including no pods, secrets, clusterroles, clusterrolebindings..etc 
 
 1. Create a kubernetes namespace
 
